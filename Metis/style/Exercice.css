@@ -1,0 +1,60 @@
+body{
+    background-color:#C6C0A0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:80%;
+margin-left: auto;
+margin-right: auto;
+}
+h2{
+    color: #7D775C;
+    font-weight: bold;
+    text-align:center;
+}
+h3{
+    color:#7D775C;
+    font-weight:bold;
+}
+.html{
+    color:green;
+}
+.css{
+    color:green;
+}
+
+.Jour{
+    color:red;
+    text-decoration: underline;
+}
+span{
+    color:green;
+}
+#container{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;   
+}
+#menu {
+    margin: 0;
+    padding: 0;
+    font: bold 1em "georgia" ,verdana;
+    list-style-type: none;
+   }
+   #menu a {
+        display: block;
+        margin: 5%;
+        color: #508768;
+        text-decoration: none;
+        line-height:2em;
+        width:80%;
+        border:1px solid blue;
+        background-color: #BDD7B5;
+        text-align: center;
+        color: #508768;
+        background-color: #BDD7B5;
+   }
+   #menu a:hover, #menu a:focus {
+    color: #BDD7B5;
+    background-color: #508768;
+   }

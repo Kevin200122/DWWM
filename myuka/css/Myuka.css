@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    background-color:red;
+    color: white;
+}
+.lion{
+    position: absolute;/*Pour déplacer une image comme l'ont souhaite.*/
+    right: 500px;
+    top: 90px;
+    height: 250px;
+}
+.Code{
+    position: absolute;
+    height: 95px;
+    top:50px;
+    margin:5px; 
+}
+body{
+    background:linear-gradient(95deg,orange,brown,red,lime);/*Permet de créer un dégrader des couleurs de fond d'une page web.*/
+    background:-webkit-linear-gradient(-15deg,orange,brown,red,lime);
+    background:-moz-linear-gradient(95deg,orange,brown,red,lime);
+    background:-o-linear-gradient(95deg,orange,brown,red,lime);
+}
+.valeur{
+    position: absolute;
+    right: 250px;
+    height:600px;
+    top:50px;
+    margin-bottom: 100px;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right:0px;
+}
+.score{
+    height: 400px;
+}

@@ -1,0 +1,106 @@
+
+body{
+    background-color: lightyellow;
+}
+
+h1{
+    text-align: center;
+    background-color:blue;
+    color:white;
+}
+.form-group{
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction:column;
+    margin:auto;
+}
+/* .first{
+    display:flex;
+    justify-content: center;
+    width: 33%;
+    flex-direction: column;
+     grid-template-columns:repeat(3,1fr);
+    grid-template-rows:auto 150px; 
+}
+.lion{
+    grid-column:1;
+    grid-row:1;
+}
+.allergie{
+    position: absolute;
+
+}
+.nutri{
+  
+    position: absolute;
+  
+
+} */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+.valeur{
+    position:absolute;
+    right: -650px;
+    margin-top: 400px;
+}
+.paragraphe{
+    position:absolute;
+    margin-top: 250px;
+}
+/* .obtenir{
+    background-color: blue;
+    font-weight: bold;
+    color:yellow;
+} */
+
+
+
+/* .valide {
+    padding-top: 1px;
+    padding-left: 10px;
+    max-width: 970px;
+    height: 30px;
+    background-color:green;
+ }
+ .retour {
+    float:right 50px;
+ }
+  */
+
+

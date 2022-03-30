@@ -12,8 +12,8 @@ h1{
 .Code{
     position: absolute;
     height: 95px;
-    top:50px;
-    margin:5px; 
+    top: 70px;
+    margin: 10px; 
 }
 body{
     background:linear-gradient(95deg,orange,brown,red,lime);/*Permet de créer un dégrader des couleurs de fond d'une page web.*/

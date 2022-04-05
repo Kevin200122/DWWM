@@ -1,0 +1,21 @@
+
+.raid{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    margin-top: 200px;
+}
+.donjon{
+    position:absolute;
+    height: 300px;
+    width:500px;
+    margin-top:60px;
+    margin-left:450px;
+}
+.clan{
+    position:absolute;
+    height: 300px;
+    width: 400px;
+    margin-left:850px;
+    margin-top:400px;
+}

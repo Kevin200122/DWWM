@@ -1,0 +1,18 @@
+li{
+    color:lightcoral;
+}
+.niveau-1{
+    color:red;
+}
+.niveau-2{
+    color:yellow;
+}
+.niveau-3{
+    color:green;
+}
+.campagne{
+    position:absolute;
+    height: 300px;
+    width: 400;
+    margin-top:200px;
+}

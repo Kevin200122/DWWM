@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+}
+.Nav_raid{
+    padding: 2rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    background-color:black;
+}
+.nav-sujet{
+    margin-right: 1.75rem;
+    text-transform: uppercase;
+    font-weight:700;
+}
+.nav-sujet a{
+    color:white;
+    letter-spacing:1px;
+}
+.nav-sujet:first-child{
+    margin-right: auto;
+    margin-left:2rem;
+}
+.raid{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    margin-top: 200px;
+}
+.donjon{
+    position:absolute;
+    height: 300px;
+    width:500px;
+    margin-top:60px;
+    margin-left:450px;
+}
+.clan{
+    position:absolute;
+    height: 300px;
+    width: 400px;
+    margin-left:850px;
+    margin-top:400px;
+}
+body{
+    background-color: black;
+}
+.carousel-control-prev-image {
+    background-image: url(../images/map-clan.jpg);
+    width: 32px;
+    height: 32px;
+}
+.carousel-control-next-image {
+    background-image: url(../images/map-donjon.jpg);
+    width: 32px;
+    height: 32px;
+}
+.carousel-control-next-image {
+    background-image: url(../images/map-raid.jpg);
+    width: 32px;
+    height: 32px;
+}
+li{}

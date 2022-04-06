@@ -1,21 +1,46 @@
+h1{
+    color:green;
+    text-shadow: 2px 2px yellow;
+}
+.conteneur1{
+    overflow: hidden;
+    max-width: 960px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px blue;
+}
+.d1{
+    width: 3840px;
+    height: 720px;
+    background-color: yellow;
+    background-image: url("../images/map-clan.jpg");
+    background-size: contain;
+    animation: defilement1 12s linear infinite;
+}
+@keyframes defilement1{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-2880px,0);}
+}
+.conteneur2{
+    max-width: 960px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px blue;
+}
+.d2{
+    width: 400%;
+    height: 100px;
+    padding-top: 50%;
+    background-color: yellow;
+    background-image: url("../images/map-raid.jpg");
+    background-size: contain;
+    animation: defilement2 12s linear infinite;
+}    
+@keyframes defilement2{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-75%,0);}
+}
 
-.raid{
-    position: absolute;
-    height: 250px;
-    width: 400px;
-    margin-top: 200px;
+.d1:hover, .d2:hover{
+    animation-play-state: paused;
 }
-.donjon{
-    position:absolute;
-    height: 300px;
-    width:500px;
-    margin-top:60px;
-    margin-left:450px;
-}
-.clan{
-    position:absolute;
-    height: 300px;
-    width: 400px;
-    margin-left:850px;
-    margin-top:400px;
-}
+ 

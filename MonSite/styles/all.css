@@ -1,4 +1,4 @@
-*{
+*{                                      /*Pour créer une navbar ici elle est de couleur noir.*/
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -20,12 +20,13 @@
 .nav-sujet a{
     color:white;
     letter-spacing:1px;
+    text-shadow: 2px 2px red;
 }
 .nav-sujet:first-child{
     margin-right: auto;
     margin-left:2rem;
 }
-.raid{
+.raid{                      /*Pour changer la taille des images par leur classe. (raid, donjon, clan, kael)*/
     position: absolute;
     height: 250px;
     width: 400px;
@@ -45,22 +46,95 @@
     margin-left:850px;
     margin-top:400px;
 }
+.kael{
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    margin-left:950px;
+    top:200px;
+}
+h1{
+    background-color: red;height: 60px; /*Pour donner une couleur à notre titre.*/
+    text-align: center;
+    text-shadow: 2px 2px lime;
+    font-style: italic;
+}
 body{
-    background-color: black;
+    background:linear-gradient(95deg,grey,blue,purple,orange);/*Permet de créer un dégrader des couleurs de fond d'une page web.*/
+    background:-webkit-linear-gradient(-15deg,grey,purple,red,orange);
+    background:-moz-linear-gradient(95deg,grey,purple,red,orange);
+    background:-o-linear-gradient(95deg,grey,purple,red,orange);
 }
-.carousel-control-prev-image {
-    background-image: url(../images/map-clan.jpg);
-    width: 32px;
-    height: 32px;
+p{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.carousel-control-next-image {
-    background-image: url(../images/map-donjon.jpg);
-    width: 32px;
-    height: 32px;
+.secondaire{
+    text-align: right;
+    color:purple;
+    margin-right: 20px;
 }
-.carousel-control-next-image {
-    background-image: url(../images/map-raid.jpg);
-    width: 32px;
-    height: 32px;
+.fiole{
+    text-align:right;
+    color:green;
+    margin-right:20px;
 }
-li{}
+
+.bonus{
+    text-align: right;
+    margin-top:10px;
+    color:yellow;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
+  table{
+    border-collapse: collapse;/*Pour rajouter des bordures au tableau et y designer aussi sa taille niveau largeur.*/
+    border: 1px solid red;
+    width: 900px;
+    background-color: white;
+}  
+caption{
+    border-collapse: collapse;/*La propriété border-collap se détermine si les bordures 
+    d'un tableau sont séparées ou fusionnées. Quand elles sont séparées, chaque cellule du tableau a ses propres bordures, 
+    distinctes. Quand elles sont fusionnées, les bordures des cellules sont partagées.*/
+    border: 1.5px solid rgb(10, 10, 10);
+    box-shadow: 10px 5px 5px black;
+    background-color: white;/*La propriété background-color permet de définir la couleur utilisée 
+    pour l'arrière-plan d'un élément (celle-ci peut être une couleur transparente).*/
+    font-size: 20px;/*La propriété font-size définit la taille de fonte utilisée pour le texte. 
+    La modification de cette taille peut entraîner la modification de la taille d'autres éléments 
+    car elle est utilisée pour calculer les valeurs des longueurs relatives 
+    (type <length>) (par exemple exprimées avec les unités em ou ex).*/
+    text-align: center;
+    font-weight: bold;
+}
+
+th{
+    border: 1.5px solid rgb(8, 8, 8);/*Pour rajouter des bordures sur les titres du tableau.*/
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;/*Pour créer des ombres ici c'est couleur noir*/
+    text-shadow: red 2px 0 10px;
+}
+td{
+    border: 1.5px solid rgb(0, 0, 0);
+    padding: 12px;
+    font-style: italic;/*La propriété font-style permet de sélectionner une fonte italique 
+    (italic) ou oblique (oblique) parmi celles listées par font-family.*/
+    text-align: right, justify;
+    font-family: cursive;
+    box-shadow: 10px 5px 5px black;
+    text-shadow: blue 2px 0 10px;

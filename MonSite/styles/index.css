@@ -2,6 +2,9 @@ h1{
     color:green;
     text-shadow: 2px 2px yellow;
 }
+h1:hover{
+    color:lime;
+}
 .conteneur1{
     overflow: hidden;
     max-width: 960px;
@@ -42,5 +45,22 @@ h1{
 
 .d1:hover, .d2:hover{
     animation-play-state: paused;
+}
+.donjon{
+    position:absolute;
+    margin-left:410px;
+    height:400px;
+    width:750px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
 }
  

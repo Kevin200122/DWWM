@@ -1,0 +1,7 @@
+Ici est pour expliquer comment j'ai fait le site web.
+Pour ma part pour quelques images, je l'ai aient transformé en diaporama avec le CSS avec une fonctionnalité d'un hover pour arrêter le diaporama au survol de la souris
+ ou il est possible, d'arreter le diaporama.
+par le survol de la souris dessus.
+Mais je n'ai pas vraiment de responsive ou un peu tout de même sur mes pages web.
+Quelques rajout bonus cependant à ma page web, quelques hover de changement de couleur au survol de la souris sur le h1. Et dans mes tableaux (<table>).
+Ajouter à ma touche final avec quelques émojies sympathiques sur mes pages webs.

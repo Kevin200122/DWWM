@@ -53,11 +53,21 @@
     margin-left:950px;
     top:200px;
 }
+.Kael{
+    position:absolute;
+    height:500px;
+    width:800px;
+    margin-left:-700px;
+    top: 800px;
+}
 h1{
     background-color: red;height: 60px; /*Pour donner une couleur à notre titre.*/
     text-align: center;
     text-shadow: 2px 2px lime;
     font-style: italic;
+}
+h1:hover{
+    color:blue;
 }
 body{
     background:linear-gradient(95deg,grey,blue,purple,orange);/*Permet de créer un dégrader des couleurs de fond d'une page web.*/
@@ -69,7 +79,7 @@ p{
     color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.secondaire{
+.secondaire{              /*les class secondaire, fiole et bonus*/
     text-align: right;
     color:purple;
     margin-right: 20px;
@@ -129,6 +139,9 @@ th{
     box-shadow: 10px 5px 5px black;/*Pour créer des ombres ici c'est couleur noir*/
     text-shadow: red 2px 0 10px;
 }
+th:hover{
+    color:green;
+}
 td{
     border: 1.5px solid rgb(0, 0, 0);
     padding: 12px;
@@ -138,3 +151,24 @@ td{
     font-family: cursive;
     box-shadow: 10px 5px 5px black;
     text-shadow: blue 2px 0 10px;
+}
+td:hover{
+    color:red;
+}
+@media screen and (max-width: 640px) {
+    .bloc {
+      display:block;
+      clear:both;
+    }
+  }
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}

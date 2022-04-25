@@ -1,0 +1,28 @@
+
+    {
+        "Name": "Domino's",
+        "Slogan": "Domino's pizza",
+        "Les-pizzas":[{
+            "name": "SANTORINI",
+            "prix": "15.00" ,
+            "image": "images/pizza.jpg",
+        "garniture": "Bacons, tomates"
+        
+        },
+        {
+            "name":"MARGARITTA",
+            "prix":"14.50",
+            "image": "images/pizza2.jpg",
+            "garniture": "jambon, champignon"
+        },
+        {
+            "name":"Emmentale",
+            "prix":"15.50",
+            "image": "images/pizza3.jpg",
+            "garniture": "bacon, fromage"
+        }
+        
+        ]
+    }
+        
+    

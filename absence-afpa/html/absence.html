@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+          <!-- Activer les CSS Media Queries -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" href="../style/absence.css"> -->
     </head>
     <body>
-        <form>
+        
+            <p>Identification</p>
             <label for="prenom">Prénom:</label>
-            <input type="text" id="leprenom" name="prenom"><br/>
+            <input type="text" id="leprenom" name="prenom"><br/><br/>
             <label for="nom">nom:</label>
-            <input type="text" id="lenom" name="nom"><br/>
+            <input type="text" id="lenom" name="nom">
+        <br/>
+        <div id="form2">
+            <p>Demande de s'absenter au centre</p>
+            <div><input type="radio" id="jour" name="absence" checked>
+            <label for="jour">Un jour au moins</label></div>
+            <div><input type="radio" class="jour" name="absence" checked>
+            <label for="jour">Plus d'un jour</label></div>
+            <div><label for="start">Start date:</label></div>
 
-        </form>
-        <form>
-            <label for="start">Start date:</label>
-
-            <input type="date" id="start" name="trip-start"
+            <div><input type="date" class="start" name="trip-start"
                    value="2022-01-01"
-                   min="2022-01-01" max="2022-12-31">
-        </form>
+                   min="2022-01-01" max="2022-12-31"></div>
+            <div><label for="depart">de:</label>
+            <input type="text" class="depart" name="depart">
+            </div>
+           <div><label for="fin">à:</label>
+            <input type="text" class="fin" name="fin">
+            </div>
+        </div>
+
+        <div class="preview"></div>
 
 
 
@@ -28,6 +44,6 @@
 
 
 
-        <script src="script/absence.js"></script>
+        <script src="../script/absence.js"></script>
     </body>
 </html>

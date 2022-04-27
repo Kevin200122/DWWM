@@ -1,0 +1,34 @@
+p{
+    color:green;
+}
+.identification{
+    border-style: solid;
+}
+#form2{
+    border-style:solid;
+}
+.identification2{
+    border-style: solid;
+}
+.absence2{
+    border-style:solid;
+}
+form{
+    border-style:solid;
+}
+
+body {
+	display: flex;
+    /* ordinateurs */
+@media only screen and (min-width: 992px) {
+	body {
+		flex-direction: row;
+	}
+}
+}
+/* smartphone et tablettes */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+	body {
+		flex-direction: colmun;
+	}
+}

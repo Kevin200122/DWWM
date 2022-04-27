@@ -1,5 +1,17 @@
-function chargeInfoJson fetch ("pizza.json")
-.then(res=>console.log(res))
+function ChargeInfosJson() {
+  //  Allons chercher un fichier JSON 
+  fetch('pizza.json')
+      .then(response => { /* Une fois que le fichier est chargé /
+          return response.json();  / Convertissons le en json /
+      })
+      .then(data => { / Une fois le fichier converti /
+          console.log(data); / Appelons notre fonction */
+          showBooks(data);
+
+      }
+      )
+
+}
 
 var compteur = 0;
 
@@ -23,7 +35,7 @@ function chargeInfo() {
 function createDivs(data) {
   const preview = document.getElementsByClassName("preview")[0];
   preview.innerHTML = "";
-  const pizzeriaName = document.createElement("div");
+  const pizzeriaName = document.createElement("div");//creation div et ajouté un titre et une class
   pizzeriaName.setAttribute("class", "titre");
   pizzeriaName.innerHTML = data.nom;
 
@@ -33,7 +45,7 @@ function createDivs(data) {
 
   preview.appendChild(pizzeriaName);
   preview.appendChild(pizzeriaSlogan);
-  const pizzeriaListPizzas = document.createElement("div");
+  const pizzeriaListPizzas = document.createElement("div");//creation div et d'une class + contenu+ id + pizzalist
   pizzeriaListPizzas.setAttribute("class", "contenu");
   pizzeriaListPizzas.setAttribute("id", "PizzaList");
 

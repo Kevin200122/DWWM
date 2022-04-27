@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <!-- Activer les CSS Media Queries -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+<link rel="stylesheet" href="../style/absence.css">
+    </head>
+    <body>
+        <button type="button">Imprimer le document</button>
+        <form class="identification2">
+            <p>Identification</p>
+            <label for="nom">Nom:</label>
+            <input type="text" class="Nom" name="Nom"><br/><br/>
+            <label for="prenom">Prénom:</label>
+            <input type="text" class="prenom" name="prenom"><br/><br/>
+            <label for="Formation">Formation suivie:</label>
+            <input type="text" class="Formation" name="Formation">
+        </form><br/>
+        <form class="absence2">
+            <p>Demande l'autorisation de s'absenter du centre</p>
+            <label for="date2">le:</label>
+            <input type="date" class="start2" name="strip-start"
+            value="2022-01-01"
+            min="2022-01-01" max="2022-12-31"><br/>
+            <label for="depart2">de:</label>
+            <input type="text" class="depart2" name="depart"><br/>
+            <label for="fin2" class="">à:</label>
+            <input type="text" class="fin2" name="fin">
+        </form><br/>
+
+        <form>
+            <label for="debut">du:</label>
+            <input type="text" class="debut"><br/>
+            <label for="arrivee">au:</label>
+            <input type="text" class="arrivee"><br/>
+            <label for="conclusion">soit:</label>
+            <input type="text" class="conclusion">
+
+        </form>
+
+        <script src="../script/absence.js"></script>
+    </body>
+</html>

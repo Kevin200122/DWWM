@@ -1,0 +1,53 @@
+CTRL+C pour copier, CTRL+V pour coller
+1
+<html>
+2
+<head>
+3
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+4
+<title>Mon titre</title>
+5
+<script type="text/javascript" src="../script/Entrainement2.js"></script>
+6
+</head>
+7
+<body>
+8
+<h1 onClick="showHxContent(1)">Partie 1</h1>
+9
+<div id="title1" style="display:none">
+10
+<p>Mon premier paragraphe</p>
+11
+<p>Mon second paragraphe</p>
+12
+</div>
+13
+<h1 onClick="showHxContent(2)">Partie 2</h1>
+14
+<div id="title2" style="display:none">
+15
+<p>Mon premier paragraphe</p>
+16
+<p>Mon second paragraphe</p>
+17
+</div>
+18
+<p>
+19
+<input type="submit" value="Masquer" onClick="hideAllDivs()"/>
+20
+</p>
+21
+<p>
+22
+Titre n°: <input type="text" id="title"/>
+23
+<input type="submit" value="Afficher" onClick="alertTitle()"/>
+24
+</p>
+25
+</body>
+26
+</html>

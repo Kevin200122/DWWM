@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    display:flex; /* Pour insérer une image de fond en css*/
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: url("../images/mercoucherdesoleil.jpg");
+    background-size: cover;
+}
+#carrousel{
+    width:800px; /*width et height pour définir les dimensions pour le carrousel*/
+    height:400px;
+    border:solid 4px #FFF;/*pour appliquer une bordure de 4px et de couleur blanche*/
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);/* pour créer une ombre autour du carrousel */
+    position:relative;/*Position relative pour pouvoir ensuite y mettre nos boutons sur le carrousel*/
+    overflow: hidden;
+}
+#container{
+    width:800px; /* Pour définir la taille du container.*/
+    height:400px;
+}
+.photo{
+    width:800px; /*Pour mettre les photos à la taille du carrousel*/
+    height:400px;
+    margin:0;/*margin à 0 pour supprimer les marges*/
+    display:inline-block;/*Pour que les div block restent sur la même ligne e t pas ailleur*/
+    background-size: cover;/*Pour que les espaces des images soit visible au niveau du container*/
+}
+.bouton{
+    position:absolute;
+    width: 70px;
+    cursor:pointer;/*Pour changer le tyle du curseur au survol de la souris*/
+    top:150px;
+}
+#g{
+    left:0;
+    opacity:0.4; /*Pour rendre le bouton un plus transparent*/
+    transform:rotate(0deg); /*Pour créer une rotation pour le bouton, mais étant à 0 l'élément ne change pas de sens ni se déplace ailleur.*/
+    transition:all 0.3s ease;/*Pour éviter des changements trop brusque*/
+}
+#d{
+    right:0;
+    opacity:0.4;
+    transform:rotate(0deg);
+    transition: all 0.3s ease;
+}
+#g:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity:1;
+    transition: all 0.3s ease;
+}
+#d:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity:1;
+    transition: all 0.3s ease;
+}

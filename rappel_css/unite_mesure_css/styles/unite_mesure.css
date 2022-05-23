@@ -1,0 +1,24 @@
+body{
+    background: #333;
+    margin: 0;
+    height: 100vh; /*Correspond à 100 pourcents de la taille de fenêtre de notre navigateur(hauteur).*/
+}
+
+.box{
+    width: 300px;
+    height: 20vh;/*Correspond à 20 pourcents de la taille de notre page(hauteur).(viewport height)*/
+    /*Et pour la largeur il est possible de faire vw (largeur) (viewport width) qui fera pareil, 
+    mais cette fois-ci pour la largeur. */
+    background: red;
+}
+.box2{
+    width: auto;/*Prend toute la largeur de notre block div*/
+    height: auto;/*Remplit la hauteur en automatique selon le contenu, si rien n'est dedans rien ne s'affichera.*/
+    padding: 50px solid green;
+    border: 50px solid lightgreen;
+    background: lightgreen;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+}

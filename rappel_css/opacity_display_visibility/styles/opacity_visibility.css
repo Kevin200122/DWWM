@@ -1,0 +1,12 @@
+.p1{
+    display:none;/*Fait disparaître le paragraphe complètement du flow */
+    /*Remarque cette méthode est la plus utilisée et recommandée par les développeurs*/
+}
+
+.p2{
+    visibility:hidden;/*Cache le paragraphe mais le sort pas complètement de la page html*/
+    /*technique non recommander en développement et peu utilisée*/
+}
+.p3{
+    opacity:0;/*Peu servir pour les couleur en RGBA ou mettre transparent des éléments, par contre, il faut éviter le 0 très peu recommandable et inutile!!*/
+}

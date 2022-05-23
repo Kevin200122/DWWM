@@ -1,0 +1,9 @@
+.box{
+    width:100px;
+    height: 100px;
+    padding: 10px;
+    border:10px solid black;
+    margin: 150px auto;/*Pour centrer en automatique verticalement*/
+    background:red;
+    box-shadow:border-box;
+}

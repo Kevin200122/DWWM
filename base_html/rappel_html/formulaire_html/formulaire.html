@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+
+        <label for="prenom">prenom :</label><br><!---->
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom"><br>
+
+        <label for="nom">nom :</label><br><!--Placeholder pour intégrer un texte fictif dans nom -->
+        <input type="text" id="nom" name="nom" placeholder="nom"><br><br>
+
+        <textarea name="message"  cols="30" rows="10"></textarea><br><br>
+
+        <select name="pays" id="pays">
+            <option value="japon">japon</option><!--pour créer une select box!-->
+            <option value="chine">chine</option>
+            <option value="france">france</option>
+        </select>
+        <br><br>
+
+        <input list="terre">
+        <datalist id="terre">
+            <option value="japon">
+            <option value="belgique">
+            <option value="france">
+            <option value="italie">
+        </datalist>
+
+        <button>Envoyer</button>
+    </form>
+
+</body>
+</html>

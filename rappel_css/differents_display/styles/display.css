@@ -1,0 +1,25 @@
+.box {
+    display: inline;/*Pour transformer un block en inline*/
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.box2{
+    display: inline-block;/*Accepte aussi bien les propriétés inline ainsi que block*/
+    width: 100px;
+    height: 100px;
+    background:green;
+}
+
+span{
+    display:block;/*Pour transformer un inline en block.*/
+    width:600px;
+    background:blue;
+}
+.span2{
+    background:yellow;
+    color:purple;
+    display:block;
+    height:60px;
+}

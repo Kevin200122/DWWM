@@ -1,0 +1,22 @@
+body{
+    height:300vh;
+}
+
+.box{
+    width: 250px;/*250px de largeur*/ /*block de code pour créer un carrée de dimension 250 pixels*/
+    height: 250px;/*250px de hauteur*/ /*les pixels sont des valeurs fixe qui ne changent pas (valeurs absolutes)*/
+    background:green;
+}
+.box1{
+    width:50%;/*Les dimensions en pourcentage sont des valeurs relatives qui s'adaptent selon la taille de la fenêtre html*/
+    /*Et celle-ci dépendra toujours de notre corps de la page le body, si la fenêtre html diminue, la valeur relative diminue également en taille*/
+    max-width:400px;/*La largeur ne dépassera pas les 400 pixels car ceci sera son maximum*/
+    min-height:350px;/*La hauteur sera au minimum de 350 pixels*/
+    background:red;
+}
+.box2{
+    width:250px;
+    /* min-width: 600px;   La largeur exigée sera au minimum de 600 pixels */
+    height:250px;
+    background:blue;
+}

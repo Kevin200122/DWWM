@@ -1,0 +1,17 @@
+body{
+    width:100%;
+    height:100vh;
+    margin:0;
+}
+.accueil{
+    width:100%;
+    height:100%;
+    /*background: #333;*/
+    background-color:#333;/*Ici ceci est pour créer un fond noir, si au cas ou la méthode pour mettre l'image dans notre html échoue.*/
+    background-image: url(../images/paysage.jpg);/*trois manière pour le background image (écrire url,mais sans guillemets ou avec ou avec les apostrophes*/
+    background-position: center;/*Pour naviguer au centre de l'image*/
+    background-position: top;/*Pour mettre l'image plus en hauteur*/
+    background-repeat: no-repeat;/*pour évite la répétition de l'image*/
+    background-size: cover;/*Au cas ou il manque, un peu d'espace et que l'image ne fait pas tout le fond, cover sert pour justement régler ce problème*/
+    background: no-repeat center / cover url(../images/paysage.jpg);/*Voici comment il faut faire avec un background de plusieurs propriétés, bien faire cela dans cet ordre*/
+}

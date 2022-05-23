@@ -1,0 +1,23 @@
+body{
+    height: 150vh;
+}
+
+.img-responsive{
+    width:150vh;
+}
+
+.img-responsive{
+    width:100%;
+    height:auto;
+}
+.carte-img{
+    width: 600px;/*Nous donnons ici la mesure de notre image*/
+    height:550px;
+    /*overflow: hidden;*/
+    background:rgba(238, 14, 14, 0.5);/*Pour voir mieux le h3 qui est mis sur l'image*/
+}
+.bloc-img{
+    height:70%;
+    width:100%;
+    overflow: hidden;/*Cache une partie de notre image*/
+}

@@ -1,0 +1,47 @@
+body {
+    height: 150vh;
+}
+
+.img-responsive {
+    width: 150vh;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.carte-img {
+    width: 800px;
+    /*Nous donnons ici la mesure de notre image*/
+    height: auto;
+    /*overflow: hidden;*/
+    background: rgba(0, 0, 0, 0.2);
+    /*Pour voir mieux le h3 qui est mis sur l'image*/
+    border: 2px solid black;
+}
+
+.bloc-img {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    /*Cache une partie de notre image*/
+}
+
+.carte-img h3 {
+    padding: 10px;
+}
+
+.carte-img p {
+    padding: 10px 10px 10px;
+}
+
+carte-img hr {
+    margin-bottom: 15px;
+}
+
+a {
+    padding: 0px 10px;
+    text-decoration: none;/*Pour retirer ici la barre des liens a href*/
+    cursor:auto;/*Pour retirer le lien et que ceci devienne du texte, plus de clic souris possible*/
+}

@@ -1,0 +1,19 @@
+body{
+    height:160vh;
+}
+
+ .box{
+    /* width:250px;
+    height:250px; */
+    background:red;  
+    /* margin:70px; */
+ }
+span {
+    background:yellow;
+    /* margin: 0px 12px; */
+    padding:60px;
+}
+
+/*Remarque les balises de type inline ne peuvent pas accepter, les margin-top, ainsi que height, et width en CSS*/
+/*Ainsi aussi que avec le bottom*/
+/*les inline ne prennent seulement que les dimension de leur contenu.*/

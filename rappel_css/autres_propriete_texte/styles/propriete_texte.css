@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    /*font-style: italic;*/
+    /*Pour mettre le texte en italique*/
+    /*font-weight: bold;*/
+    /*Pour mettre le texte en gras.*/
+    /*font-weight: 100;*/
+    /*Pour diminuer le gras d'un texte*/
+    /*font-size:40px;*/
+    /*Pour choisir la taille du texte, ici il s'est agrandi sur une taille 50 pixels*/
+    /*line-height: 1;*/
+    /*Pour définir la hauteur des lignes.*/
+    /*font-family: sans-serif;*/
+    margin: 0;
+    font: italic 100 40px / 1 'Abril Fatface', sans-serif;
+    color:red;
+    /*Pour faire la même chose que pour ce qui est au dessus, mais en seulement une ligne de code.*/
+    /*Plus une chose en plus, une police d'écriture via google font à été ajouté à notre code pour mettre cette forme de police sur notre page html*/
+    /*Une deuxième police se fera à la place si notre google font ne fonctionne plus dans notre code.*/
+    text-align: center;/*A utiliser surtout sois pour mettre au centre ou mettre à droite notamment*/
+    white-space: nowrap;/*Méthode (nowrap) pour empêcher le retour à la ligne (à utiliser avec des pincettes!!)*/
+    text-transform: capitalize;/*Pour mettre en majuscule la première lettre de chaque mot*/
+    /*Sinon nous avons uppercase pour mettre tout en majuscule*/ /*ou lowercase pour mettre tout en minuscule*/
+    margin-top: 50px;
+    text-decoration: underline;/*pour souligner le texte*/ /*pour souligner au dessus d'un texte overline*/
+    /* ou line-through pour barrer du texte*/
+    letter-spacing: 1px;/*pour séparer les lettres entre elles*/
+}
+
+p {
+    font-weight: bold;
+    margin: 0;
+    width:200px;
+    text-align:justify;
+}

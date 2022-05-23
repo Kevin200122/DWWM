@@ -1,0 +1,9 @@
+.para1{
+    background-color:rgba(212, 224, 43, 0.9);/*Pour mettre une couleur et choisir son taux de transparence*/
+    color:grey;
+}
+.para2{
+    background-color:rgb(68, 191, 240);/*pour mettre une couleur, mais cette fois sans de transparence*/
+    /*il faut savoir savoir également que rgb fonctionnent à partir de trois couleurs(rouge,vert,bleu).*/
+    /*D'ou en anglais (red,green,blue).*/
+}

@@ -1,0 +1,9 @@
+p{
+    background:orange;/*Pour mettre les paragraphes en orange*/
+}
+.para1{
+    background:cyan;/*Pour mettre notre paragraphe en cyan par sa class*/
+}
+.superpara1{
+    color:red;
+}

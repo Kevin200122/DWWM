@@ -11,27 +11,36 @@ body{
     mais cette fois-ci pour la largeur. */
     background: red;
 }
-/*.box:active{
+.box:active{
     background: green;/*Change la couleur en vert au clique de la souris*/
-/*}*/
-/*.box:hover{
-    background: purple;*//*change notre div en couleur violet au survole de la souris*/
-/*}*/
-/* input:focus{
+}
+.box:hover{
+    background: purple;/*change notre div en couleur violet au survole de la souris*/
+}
+input:focus{
     background: yellow;
-} */
+}
 
-/* input:checked{
+input:checked{
     width:250px;
     height: 250px;
-} */
-/* a:visited{
+}
+a:visited{
     color:green;
-} */
-li:last-child{
+}
+.couleur:last-child{
     background: salmon;/*pour mettre notre dernier élément de notre liste en couleur saumon*/
 }
-li:nth-child(2){
+ .couleur:nth-child(2){
     background:lightcyan;/*Pour mettre en cyan le deuxième élément de li en cyan*/
+}
+.liste:nth-child(even){
+    background:orange;/*Pour mettre en couleur de fond les liste en chiffre pairs (2,4,6) mais de même niveau.*/
+}
+.liste2:nth-child(odd){ /*Pour mettre en couleur de fond les listes de chiffres impairs*/
+    background: green;
+}
+p:not(.para2) {
+    color: red; /*Mets tout les paragraphes en rouge sauf celui ciblé.*/
 }
 

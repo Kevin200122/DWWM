@@ -1,0 +1,22 @@
+.button1{
+    outline: 10px solid blue;
+    outline-width: 10px;
+    outline-style: solid; /*Méthode assez déconseillé utiliser plutot les radius que outline.
+    De plus ceci se fait pas correctemment contrairement au radius.*/
+    /*Et pas mal de fonctionnalités en moins que le radius, donc à bannir.*/
+    outline-color: blue;
+
+    border-top-color:yellow;
+}
+.button2 {
+    width:350px;
+    height:90px;
+    background: green;
+    color:yellow;
+    text-align: center;
+    font-size: 35px;
+    line-height: 90px;/*si line-height et height sont de même valeur en pixels le texte sera centré.*/
+    border-radius:50px;/*si la valeur en pixel est de valeur au-dessus de la moitié de height
+    alors les bords serons arrondies.*/ /*Ceci s'appelle un bouton pillule, car ceci est en forme de
+    pillule.*/
+}

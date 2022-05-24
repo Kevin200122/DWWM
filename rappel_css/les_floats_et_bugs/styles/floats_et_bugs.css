@@ -1,0 +1,20 @@
+.container {
+    background: red;
+    width: 500px;
+    height: 550px;
+}
+.bloc {
+    width: 100px;
+    height:100px;
+}
+.b1{
+    background:purple;
+    float: left;
+}
+/* .b2 {
+    background: green;
+    float: right;
+} */
+p {
+    clear: left;/* float left et clear left servent à dégager du texte à gauche pour le mettre finalement en dessous.*/
+}

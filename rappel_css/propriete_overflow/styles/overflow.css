@@ -1,0 +1,14 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background: orange;
+    overflow: hidden; /* Pour cacher le texte qui dépasse de la partie couleur.*/
+    overflow: visible; /* Pour rendre visible de nouveau le contenu caché*/
+
+}

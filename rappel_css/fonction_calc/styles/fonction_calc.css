@@ -1,0 +1,36 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    height: 70px;
+    width: calc(100% - 20px);/*permet de faire des petits calculs*/ /*Ceci modifie la navbar en taille.*/
+    background: white;
+}
+
+ul{
+    width: 100%;
+    text-align: center;
+}
+nav ul li {/*Pour préciser ce que nous ciblons en css*/
+    display: inline-block;
+    line-height: 70px;/*Pour center le texte en haut et en bas .*/
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+h1{
+    color:red;
+    text-align: center;
+    font-size: calc(40px + 2vw);/*change aussi la taille du h1 par calcul.*/
+}

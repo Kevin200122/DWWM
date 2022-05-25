@@ -1,7 +1,19 @@
 .container {
     background: red;
     width: 500px;
-    height: 550px;
+    height: auto;
+}
+.container::after {
+    content: '';/*Méthode pour empêcher le bug des floats, car sans cette partie, il est impossible 
+    pour le navigateur de repérer une hauteur, pour lui elle n'existait plus. D'ou la méthode
+     (content, display et clear).
+    Et c'est pour cela que nous avons créer un block à gauche, pour forcer le block qui bug à reprendre
+     une hauteur existante, afin que la couleur rouge au milieu réaparaisse.*/ 
+     /*Mais comme les méthodes de positionnement ont évoluer depuis, le float commence
+      à être de moins en moins utiliser. Mais il était important de connaître cette méthode au cas ou 
+      des entreprises utiliseraient encore cette ancienne méthode.*/
+    display:block;
+    clear: both;/*le clear both est la touche final pour résoudre définitivement un bug sur la méthode float.*/
 }
 .bloc {
     width: 100px;
@@ -11,10 +23,7 @@
     background:purple;
     float: left;
 }
-/* .b2 {
+.b2 {
     background: green;
     float: right;
-} */
-p {
-    clear: left;/* float left et clear left servent à dégager du texte à gauche pour le mettre finalement en dessous.*/
 }

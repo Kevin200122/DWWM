@@ -1,0 +1,25 @@
+.wrap{
+    width: 600px;
+    height: 600px;
+    background-color: darkturquoise;
+    margin: 0px auto;/*ceci va centré notre élément wrap.*/
+    padding-top: 200px;/*Ceci nous permets de remettre notre contenu parent désirer en premier,comme
+    nous le voulions au départ.La couleur turquoise s'affiche bien par le haut.*/
+}
+
+.box1, .box2, .box3 {/*ici nous prenons les trois éléments en même temps les virgules sont comme des (et).*/
+    width: 600px;
+    height: 200px;
+}
+.box1 {
+    background-color: palevioletred;
+    margin-top: 100px; /*Ceci va pousser l'élément parent vers le bas, et non plus par le haut de manière incorrecte par les éléments
+    enfants qui était ici illogique. grâce à l'élément dans le parent qui est le padding-top.*/
+}
+.box2 {
+    /*margin-top: 400px;*//*une marge de 200px de hauteur a été créer*/
+    background: thistle;
+}
+.box3 {
+    background: red;
+}

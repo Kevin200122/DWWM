@@ -41,7 +41,7 @@ body{
     width: 100%;
     height: 70px;
     background: blue;/*Notre méthode sur box3 est très utile car ceci reste fixe même en bougeant du texte,
-     très utile pour créer une navbar ou un pup-up.*/
+     très utile pour créer une navbar ou un pop-up.*/
     margin: 10px;
     position: relative;
     position:fixed;

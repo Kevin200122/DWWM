@@ -1,0 +1,24 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: orange;
+    /*transition: transform 1000ms ease-in-out 1s*/;/*Fait une transition d'un point a à b.*/ /*Transition est le raccourci de property, duration, timing function et delay.*/
+    /*ease-in pour ralentir la vitesse de l'animation au début et accélère après. Et ease-out accélère l'animation au début, mais la ralentie pour après. Et le ease-in-out pour une animation ralentie pour le début et la fin, mais accélérer au milieu de l'animation.*/
+}
+.box:hover {
+    transition: transform all 1000ms ease-in-out 1s;/*l'animation va s'activer au survole de la souris, car nous avons mis notre all dans notre hover.*/
+    transform: rotate(180deg);/*Fait une rotation au survol de la souris de 190 degrés*/
+}

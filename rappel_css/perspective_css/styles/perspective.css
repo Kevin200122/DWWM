@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    perspective: 100px;
+    perspective-origin:top left;/*décale haut et de la gauche notre élément en le faisant avancé ou reculé selon la valeur de notre pixel dans transform translate.*/
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: orange;
+    /*transform:translate3d(0, 0, 10px);*//*La dernière valeur si négatif notre carré s'éloigne et du coup devient plus petit. A l'inverse si positif et bien, notre carré s'approche de  plus en plus de l'écran, et pour le coup deviant plus grand. Mais sera limité et ne pourra dépasser les 99px de notre perspective de notre body.Car après il sort de notre navigateur car trop sur la gauche. Et disparait pour le coup de notre vu.*/
+    transform:rotate(56deg);
+    transform-origin: 40px 20px;/*Ceci change la transformation d'origine.*/
+}

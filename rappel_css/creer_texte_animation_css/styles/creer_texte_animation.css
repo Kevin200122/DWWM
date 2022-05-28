@@ -1,0 +1,64 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    width: 100%;/*Prends une largeur de 100% */
+    text-align: center;
+    position: absolute;
+    top: 30%;/*Pousse notre texte à 30%  de hauteur.*/
+}
+ul li{
+    display:inline-block; /*Pour mettre les lettres en une seule ligne. */
+    list-style-type: none; /*Pour retirer les puces de notre ul par défaut.*/
+    color: #484848;
+    font-size: 8vw;
+    letter-spacing: 15px;/*ici ça sera pour espacer les lettres entre-elles.*/
+    animation: flash 1.4s linear infinite;/*Pour que notre animation se fasse à l'infinie*/
+}
+@keyframes flash{
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    90%{
+        color: #484848;/*l'animation ne change pas.*/
+        text-shadow: none;
+    }
+    100%{
+        color:gold;/*A 100 pourcents notre animation aura du jaune.*/
+        text-shadow: 0 0 7px gold, 0 0 50px orange;/* Animation des couleurs, le jaune et orange defilera sur les 9 lettres.*/
+    }
+}
+ul li:nth-child(1){
+    animation-delay: 0.1s ;
+}
+ul li:nth-child(2){
+    animation-delay: 0.2s ;
+}
+ul li:nth-child(3){
+    animation-delay: 0.3s ;
+}
+ul li:nth-child(4){
+    animation-delay: 0.4s ;
+}
+ul li:nth-child(5){
+    animation-delay: 0.5s ;
+}
+ul li:nth-child(6){
+    animation-delay: 0.6s ;
+}
+ul li:nth-child(7){
+    animation-delay: 0.7s ;
+}
+ul li:nth-child(8){
+    animation-delay: 0.8s ;
+}
+ul li:nth-child(9){
+    animation-delay: 0.9s ;/*Répétition de notre code pour faire notre animation sur toute les lettres.*/
+}

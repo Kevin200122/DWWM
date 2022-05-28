@@ -1,0 +1,31 @@
+body{
+    background: #000;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: red;
+    /* animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+    /* animation-timing-function: ease-in; */
+    animation: spin 2s ease-in forwards;/*raccourci qui remplaces les propriétés en commentaire.*/
+
+}
+@keyframes spin {/*Keyframes sert à faire des animations.*/
+    0% {
+        transform: rotate(0deg)
+    }
+    50%{
+        background: lightblue;/*l'animation à 50 pourcent de la rotation devient bleu clair*/
+    }
+    100%{
+        transform: rotate(720deg);/* la forme va tourner deux fois sur elle-même*/
+        background: green;
+    }
+}
+/*.box:hover{*/
+    /*animation: spin 2s;*/ /* l'animation tourne sur elle-même durant 2 secondes au survol de la souris.*/
+/*}*/

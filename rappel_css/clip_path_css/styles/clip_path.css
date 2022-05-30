@@ -1,0 +1,10 @@
+
+body {
+    height: 100vh;
+}
+
+img {
+    width: 500px;
+    /*clip-path: circle(30%);*//*Pour transformer l'image en cercle*/
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);/*Pour transformer notre image ici c'est en triangle.*/
+}

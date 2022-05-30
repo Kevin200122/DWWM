@@ -1,0 +1,16 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+    /*background: linear-gradient(to right, blue, yellow, green);*//*fais des dégradeés de couleur.*/
+
+    background: radial-gradient( yellow, blue, red); /*Fais des dégradés de couleurs en forme de spiral*/
+}
+
+
+

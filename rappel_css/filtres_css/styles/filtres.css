@@ -1,0 +1,28 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+}
+
+img {
+    width: 700px;
+    /* filter: blur(5px);*//*Pour que l'image soit flou. */
+    /*filter: contrast(200%);*//*Pour ajouter du contraste à l'image*/
+    /*filter: grayscale(100%);*//*Pour ajouter du gris dans l'image*/
+    /*filter: invert(100%);*//*Pour inversé nos couleurs sur l'image.*/
+    /*filter: opacity(10%);*/
+    /*filter: saturate(200%);*//*Pour saturer les couleurs de l'image.*/
+    /*filter: sepia(50%);*//*donne une petite couleur sympas dans l'image.*/
+    /*filter: hue-rotate(80deg);*//*Pour tourner les couleur sur une roue chromatique*/
+    /*filter: drop-shadow(0px 20px 30px #000);*//*Rajoute de l'ombre sous notre image */
+    filter: blur(3px) sepia(70%);/*Nous pouvons mettre ici plusieurs propriétées.*/
+}
+h1 {
+    /*filter: drop-shadow(0px 20px 30px #000);*//*creation d'une ombre directement sur notre texte.*/
+    font-size: 150px;
+}

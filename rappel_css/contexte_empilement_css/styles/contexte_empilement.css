@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.element {
+    width: 250px;
+    height: 75px;
+    margin: 5px;
+    position: relative;
+}
+.el1 {
+    background: red;
+    z-index: 10; /*Pour changer notre contexte pour un empillement.*/
+    /*Avec z-index la forme rouge n'est plus en dessous des autres éléments mais au dessus maintenant.*/
+}
+
+.el2 {
+    background: blue;
+    top: -50px;/*moins de 50px vers le haut et 50px par la gauche, pour empiller notre forme au dessus de el1 partiellement 
+    mais pas complètement..*/
+    /*z-index à mis notre forme bleu en dessous de notre forme rouge .*/
+    left: 50px;
+    z-index: 5;
+}
+
+.el3 {
+    background: yellow;
+    top: -100px;
+    left: 100px; /*moins 100px en haut et 100px par la gauche. Pour empiller notre forme au dessus des autres partiellement. 
+    Mais se mets derrière a savoir (el1 et el2).*/
+    /*Même si la forme n'a pas de index ici, les formes avec un index se mettent au dessus de lui.*/
+    /*Alors que si les autres n'avaient pas eu d'index, la forme verte serai au dessus due la form bleu et rouge.*/
+}

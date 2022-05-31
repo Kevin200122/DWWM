@@ -1,0 +1,28 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carte {
+    width: 70%;
+    max-width: 500px;/*Pour rendre responsive notre carte. En lui donnant une largeur minimum et une largeur maximum*/
+    min-width:280px;
+    height: auto;
+    box-shadow:  0 5px 20px rgba(0,0,0,0.5);/*Pour rajouter une ombre à notre carte.*/
+    margin: 100px auto;
+}
+.carte img {
+    width: 100%;
+}
+.carte h2 {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.carte p {
+    padding: 15px;
+}

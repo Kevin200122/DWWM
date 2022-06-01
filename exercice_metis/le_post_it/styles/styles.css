@@ -1,0 +1,8 @@
+.postit{
+    position: absolute;
+    opacity: 0;
+    background: yellow;
+}
+.postit:hover{
+    opacity: 1;
+}

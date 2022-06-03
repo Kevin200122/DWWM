@@ -1,12 +1,14 @@
 
-function cache(){ let buttoncacheDiv = document.getElementById('cache'); let buttonafficherDiv = document.getElementById('Afficher');
-    let cache = document.getElementById('cache');
-    if (buttoncacheDiv.button){
-        buttoncacheDiv.style.visibility = false ;
-        cache.visibility = " ";
+function Cachediv() {
+    button.addEventListener('mousedown', (event) => {
+        document.getElementById('postit').innerHTML = "";
+    });
+    function Afficherdiv() {
+        button.addEventListener('mousedown', function () {
+            this.classList.add("Merci d'avoir cliqué sur moi.")
+        });
+        p.addEventListener('mouseover', function () {
+            this.classList.add = ("Merci de bien vouloir me survoler!");
+        });
     }
-    else if (buttonafficherDiv){
-        
-    }
-
 }

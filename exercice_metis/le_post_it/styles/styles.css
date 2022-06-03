@@ -1,8 +1,11 @@
 .postit{
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     background: yellow;
 }
-.postit:hover{
-    opacity: 1;
+#cache{
+    cursor: pointer;
+}
+#Afficher {
+    cursor: pointer;
 }

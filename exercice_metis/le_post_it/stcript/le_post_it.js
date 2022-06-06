@@ -1,4 +1,6 @@
 
+var cache = Cachediv;
+var affiche = Afficherdiv;
 function Cachediv() {
     button.addEventListener('mousedown', (event) => {
         document.getElementById('postit').innerHTML = "";

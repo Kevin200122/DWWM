@@ -1,16 +1,15 @@
+var cache = visibility;
+var Afficher = Afficherdiv;
 
-var cache = Cachediv;
-var affiche = Afficherdiv;
-function Cachediv() {
-    button.addEventListener('mousedown', (event) => {
-        document.getElementById('postit').innerHTML = "";
-    });
-    function Afficherdiv() {
-        button.addEventListener('mousedown', function () {
-            this.classList.add("Merci d'avoir cliqué sur moi.")
+new function Cachediv() {
+    button.Cachediv.style() 
+        div.style.visibility = "none";
+    new function Afficherdiv() {
+        button.getElementByClassName('mousedown', function () {
+            document.innerHTML = document.write("<div>Vous avez cliqué sur le bouton affiché.</div>");
         });
-        p.addEventListener('mouseover', function () {
-            this.classList.add = ("Merci de bien vouloir me survoler!");
+        div.getElementByClassName('mouseover', function () {
+            document.innerHTML = document.write("<div>Merci de bien vouloir me survoler!</div>");
         });
     }
 }

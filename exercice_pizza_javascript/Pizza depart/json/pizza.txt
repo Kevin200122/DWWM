@@ -1,0 +1,5 @@
+{
+    "Nom"       : "Domino's",
+    "Slogan"    : "",
+    "TableauPizza1"     : ["Santorini", "Deluxe", "Indienne"]
+}

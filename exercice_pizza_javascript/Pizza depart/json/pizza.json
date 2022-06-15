@@ -1,0 +1,30 @@
+{
+    "nom":"Chez Luigi",
+    "Slogan": "Qu'elle est bonne ma pizza",
+    "pizzas":[
+        {
+            "nompizza":"Calzone",
+            "image":"https://assets.afcdn.com/recipe/20161130/7916_w768h583c1cx2808cy1872.webp",
+            "prix":"12.58",
+            "ingredients":[
+                "fromage","sauce tomate","jambon"
+            ]
+        },
+        {
+            "nompizza":"Royale",
+            "image":"https://img.cuisineaz.com/660x660/2013/12/20/i95731-pizza-royale.webp",
+            "prix":"12.58",
+            "ingredients":[
+                "fromage","sauce tomate","jambon"
+            ]
+        },
+        {
+            "nompizza":"4 fromages",
+            "image":"https://cuisine.nessma.tv/uploads/7/2021-01/f6665de2b1559f4b28a3f07e6f82adde.jpg",
+            "prix":"12.58",
+            "ingredients":[
+                "fromage","sauce tomate","jambon"
+            ]
+        }
+    ]
+}

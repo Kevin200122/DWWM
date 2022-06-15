@@ -25,6 +25,22 @@ console.log(choixOrdinateur);
 var fin = true;
 choixPersonne = prompt("Tu dois choisir un nombre entre 0 et 100, va-y fais ton choix!");
 
+<<<<<<< HEAD
+choixPersonne = prompt("Tu dois choisir un nombre entre 1 et 100 fais ton choix!")
+
+if(choixOrdinateur > choixPersonne) {
+    alert("Le nombre est plus grand recommence!");
+    var choixPersonne = prompt("Tu dois choisir un nombre entre 1 et 100 fais ton choix!");
+}else if(choixOrdinateur < choixPersonne) {
+    alert("Le nombre est plus petit recommence!");
+    var choixPersonne = prompt("Ty dois choisir un nombre entre 1 et 100 fais ton choix!");
+}
+
+alert("Bravo, tu as gagné!");
+     
+
+
+=======
 // Pas besoin d'un booléen pour ce cas la, on met la condition directement dans le while
 while (choixOrdinateur != choixPersonne) {
 
@@ -40,4 +56,5 @@ while (choixOrdinateur != choixPersonne) {
 
 // Ce message ne s'affichera seulement si le choixPersonne == choixOrdinateur (boucle while(tant que) vérifiée)
 alert("vous avez trouvé le bon chiffre bravo !");
+>>>>>>> fc2b087f663dac595cfd9b3a43628ac5b3d5f5fd
 

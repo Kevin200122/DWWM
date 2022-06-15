@@ -19,11 +19,11 @@ function CreateDivs(data) {
   let pizzeriaSlogan = document.createElement("div");
   pizzeriaSlogan.innerHTML = data.Slogan;
 
-  let pizzaImage = document.createElement("img");
-  pizzaImage.src = data.Image;
+  // let pizzaImage = document.createElement("img");
+  // pizzaImage.src = data.Image;
 
-  let pizzaIngredient = document.createElement("div");
-  pizzaIngredient.innerHTML = data.Ingredient
+  // let pizzaIngredient = document.createElement("div");
+  // pizzaIngredient.innerHTML = data.Ingredient
 
   preview.appendChild(pizzeriaName);
   preview.appendChild(pizzeriaSlogan);

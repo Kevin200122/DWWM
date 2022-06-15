@@ -51,16 +51,16 @@ function CreateDivs(data) {
 function CreerDivs(data) {
   const preview = document.getElementsByClassName("preview")[0];
 
-  const pizzeriaName = document.createElement("div");
+  let pizzeriaName = document.createElement("div");
   pizzeriaName.innerHTML = data.nom
 
-  const pizzeriaSlogan = document.createElement("div");
+  let pizzeriaSlogan = document.createElement("div");
   pizzeriaSlogan.innerHTML = data.Slogan;
 
   preview.appendChild(pizzeriaName);
   preview.appendChild(pizzeriaSlogan);
 
-  const pizzeriaListPizzas = document.createElement("div");
+  let pizzeriaListPizzas = document.createElement("div");
   pizzeriaListPizzas.setAttribute("class", "contenu");
   pizzeriaListPizzas.setAttribute("id", "PizzaList");
 

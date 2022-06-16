@@ -51,18 +51,18 @@ function CreateDivs(data) {
 function CreerDivs(data) {
   const preview = document.getElementsByClassName("preview")[0];
 
-  let pizzeriaName = document.createElement("div");
+  let pizzeriaName = document.createElement("div");/*Pour créer notre div avec le nom de notre pizza.*/
   pizzeriaName.innerHTML = data.nom
 
-  let pizzeriaSlogan = document.createElement("div");
+  let pizzeriaSlogan = document.createElement("div");/*Pour créer notre div et y afficher les élèments de notre json qui est ici le nom du slogan*/
   pizzeriaSlogan.innerHTML = data.Slogan;
 
   preview.appendChild(pizzeriaName);
   preview.appendChild(pizzeriaSlogan);
 
-  let pizzeriaListPizzas = document.createElement("div");
-  pizzeriaListPizzas.setAttribute("class", "contenu");
-  pizzeriaListPizzas.setAttribute("id", "PizzaList");
+  let pizzeriaListPizzas = document.createElement("div"); /*Pour créer notre liste de pizza et d'y récupérer nos éléments dans notre json.*/
+  pizzeriaListPizzas.setAttribute("class", "contenu"); /*Pour récupérer les class et nos contenus de notre liste pizza via json*/
+  pizzeriaListPizzas.setAttribute("id", "PizzaList"); /*Pour récupérer nos id et notre class pizza liste via json*/
 
   var listPizzas = data.pizzas;
   for (var x = 0; x < listPizzas.length; x++) {

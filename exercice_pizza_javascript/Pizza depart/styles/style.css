@@ -1,13 +1,19 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /*border-box indique au navigateur de prendre en compte la bordure et le remplissage
+     dans la valeur définie pour la largeur et la hauteur. Autrement dit, si on définit un élément avec une largeur de 100 pixels,
+      ces 100 pixels inclueront la bordure et le remplissage éventuellement ajoutés et c'est le contenu de la boîte qui sera compressé
+       pour absorber cette largeur supplémentaire.
+     Cela permet généralement de simplifier le dimensionnement des éléments.*/
+    margin: 0; /*Pour dénifir une marge, mais ici elle est nulle car a une valeur sur zéro.*/
+    padding: 0; /*La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage
+     sur les quatre côtés d'un élément
+     (cf. les boîtes CSS). Elle synthétise padding-top, padding-right, padding-bottom, padding-left.*/
   }
   
   
   html,
   body {
-    height: 100%;
+    height: 100%; /*Une hauteur de 100 pourcents.*/
     margin: 0;
     padding: 0;
     background: #30e8bf;  
@@ -40,74 +46,78 @@
   }
   
   .button {
-    display: flex;
+    display: flex; /*Pour rendre des éléments flexible*/
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 0;
-    border-radius: 50%;
-    font-family: "Open Sans";
+    top: 0; /*Ici la hauteur est de zéro*/
+    border-radius: 50%; /*Pour arrondir notre bouton de 50 pourcents, de sorte à ce qu'il ressemble à une forme ronde.*/
+    font-family: "Open Sans";/*Pour choisir la police d'écriture*/
     font-size: 36px;
     overflow: hidden;
-    width: 160px;
-    height: 160px;
-    background: #F49390;
-    color: lime;
-    text-shadow: 2px 2px 1px #A2666F;
-    border: 1px solid #A2666F;
+    width: 160px;/*Une largeur de 160px*/
+    height: 160px;/*Une hauteur de 160px*/
+    background: #F49390;/*Pour la couleur de font du bouton*/
+    color: lime;/*Pour la couleur d'écriture*/
+    text-shadow: 2px 2px 1px #A2666F;/*Pour choisir la couleur d'ombre autour de l'écriture du bouton*/
+    border: 1px solid #A2666F;/*Une bordure de 1 pixel de couleur maron*/
     box-shadow: 0px 15px 0px #A2666F, 0 0 20px rgba(0,0,0,0.5);
-    margin: 20px;
+    margin: 20px;/*Une marge de 20px*/
     outline: none;
-    cursor: pointer;
-    text-align: center;
+    cursor: pointer;/*Pour mettre un pointeur sur le bouton */
+    text-align: center;/*Pour aligner le texte au centre*/
   }
   
   .button:active {
-    position: relative;
-    top: 15px;
-    box-shadow: 0px 0px 0px #A2666F, 0 0 20px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
+    position: relative; /*L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, 
+    selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments.
+     Aussi, l'espace fourni à l'élément sur la page est le même que celui fourni avec static*/
+    top: 15px; /*Lorsque position vaut relative, cela définit la grandeur du déplacement avec laquelle l'élément 
+    est placé en dessous de sa position normale.*/
+    box-shadow: 0px 0px 0px #A2666F, 0 0 20px rgba(0,0,0,0.5); /*Pour créer une ombre autour de notre bouton.*/
+    transition: all 0.3s ease;/*Une transitiond'une durée de 0.3 seconds*/
   }
   
   .filename {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: block;/*Notre class filename devient un block.*/
+    width: 100%; /*Sur 100 pourcent de sa largeur.*/
+    text-align: center;/*Pour aligner nos écritures au centre*/
     color: #fff;
-    font-size: 16px;
+    font-size: 16px; /*Taille de police de 16 pixels*/
     padding: 10px 0 0;
   }
   
   .preview {
     position: relative;
-    width: 100%;
-    text-align: center;
+    width: 100%; /*100 pourcents de la largeur.*/
+    text-align: center; /*Pour aligner au centre*/
   }
 
-  .image {
-    width: 730px;
-    max-width: 730px;
-    height: auto;
-    margin: none;
-    border: solid 4px black;
-    background-color: yellow;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    border-radius: 25px;
+  .image {/* ICI IMAGE NE CORRESPOND PAS NOS IMAGES (ici c'est juste le nom de notre classe de la div sous nos images.), 
+    ICI CECI CORRESPOND A NOTRE DIV SOUS NOS IMAGES!!*/
+    width: 730px;/*Une largeur de l'image de 730 pixel*/
+    max-width: 730px;/*Une largeur à ne pas dépasser de 730 pixels*/
+    height: auto;/*La hauteur se fait de manière automatique*/
+    margin: none;/*Ici pas de marge car ceci est réglé sur none.*/
+    border: solid 4px black;/*Une bordure de 4px d'épaisseur sur la div qui est sous nos images*/
+    background-color: yellow;/*Une couleur de fond de la div sous nos images de couleur jaune. */
+    font-weight: bold;/*Les écritures sont en gras.*/
+    font-family: Arial, Helvetica, sans-serif;/*Pour choisir la police d'écriture.*/
+    font-size: 16px;/*Pour choisir la taille de la police*/
+    border-radius: 25px;/*Pour arrondir les bords de notre div à 25 pixels*/
   }
   .ingredient{
-    font-style: italic;
-    text-align: left;
+    font-style: italic;/*Pour mettre notre écriture en italique*/
+    text-align: left;/*Pour aligner notre texte sur la gauche.*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:red;
-    background: black;
-    text-shadow: white 2px 2px;
+    color:red; /*Une couleur d'écriture qui sera rouge.*/
+    background: black;/*Une couleur de fond de couleur noir.*/
+    text-shadow: white 2px 2px; /*Pour mettre une ombre blanche autour de notre écriture rouge.*/
   }
   div{
-    font-weight: bold;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;/*Notre écriture est en gras.*/
+    font-size: 25px;/*Une taille de police de 25 pixels*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*Pour choisir la police d'écriture.*/
   }
 
 

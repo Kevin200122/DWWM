@@ -1,0 +1,29 @@
+body{
+    border: solid 2px black;
+    box-sizing: border-box;
+    height:30vh;
+    width:400px;
+    text-align: center;
+}
+
+
+h2{
+    background: rgb(48, 171, 247);
+    color:white;
+}
+
+select {
+    width: 200px;
+}
+
+label{
+    color: rgb(24, 188, 252);
+}
+.button1{
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: 2px 2px 0px 2px rgb(20, 174, 239);
+}
+.input1{
+    width: 200px;
+}

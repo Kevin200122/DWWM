@@ -1,46 +1,42 @@
 
-
-var poid = document.querySelector('.poid');
-
-var taille = document.querySelector(".taille");
-
-imc = poid / (taille/100 * taille/100);
-
-//     let input1 = document.quryselector(".input1");
-//     let button = document.querySelector(".button1");
-//     button.disabled = true;
-// input1.addEventListener()
-// // function ActiverButton(){
-// //     if (document.querySelector(".input1").value === ""){
-// //         button.disabled = true;
-// //     }else{
-// //         button.disabled = false;
-// //     }
-// // }
-// // ActiverButton();
-
-
 function CalculerIMC() {
     //condition effectuer selon chaque situation de la corpulance et IMC.
 
-    const button = document.querySelector('button');
-    button.disabled = false;
-    if (imc <= 18.4) {
+    let poids = document.getElementById('poids');//Récupére l'élément id poids
+    poids = parseInt(poids.innerHTML);
+
+    let taille = document.getElementById('lataille');//Récupére l'élément id du select
+    taille = parseInt(taille.innerHTML);
+
+    let imc = poids*10000 / (taille*taille);//formule de calcul de l'IMC
+    alert(imc);imc=Math.round(imc);
+    imc = parseInt(imc);
+    
+    console.log(poids);
+    console.log(taille);
+    console.log(imc);
+
+    if (imc <= (poids=18.4/taille*taille)) {
         alert("Vous êtes bien maigre!");
+        document.write("<p>Vous êtes en sous-poids!!</p>")
     }
-    if(imc > 18.5 && imc <=24.9){
+    else if(imc > (poids=18.5/taille*taille) && imc <=(poids=24.9/taille*taille)){
         alert("Vous êtes de corpulence normal!!");
+        document.write("<p>Vous avez un poids normal pas d'inquiétude.</p>")
     }
-    if(imc > 25 && imc <=29){
-        alert("Vous êtes en surpoid!!");
+    else if(imc > (poids=25/taille*taille) && imc <=(poids=29/taille*taille)){
+        alert("Vous êtes en surpoids!!");
+        document.write("<p>Vous êtes en surpoids!</p>")
     }
-    if(imc > 30 && imc <=34.9){
+    else if(imc > (poids=30/taille*taille) && imc <=(poids=34.9/taille*taille)){
         alert("Vous êtes en obésité modérée!!");
+        document.write("<p>Vous êtes en obésité modérée!</p>")
     }
-    if(imc > 35 && imc <=39.9){
+    else if(imc > (poids=35/taille*taille) && imc <=(poids=39.9/taille*taille)){
         alert("Vous êtes en obésité sévère!!");
+        document.write("<p>Vous êtes en obésité sévère!! Attention!</p>")
     }
-    else if(imc > 40){
+    else{
         alert("Vous êtes en obésité morbide!!");
     }
 }

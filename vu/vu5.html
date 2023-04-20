@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="module">
+import Counter from "./scripts/counter.js";
+var app = Vue.createApp({
+components: {
+Counter: Counter,
+},
+template: "<counter1 />",
+});
+var vm = app.mount("div#app");
+</script>
+</html>
